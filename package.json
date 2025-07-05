@@ -1,7 +1,9 @@
 {
   "name": "hono-test",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts", 
+    "build": "bun build --target=bun --outfile=./dist/index.js ./src/index.ts",
+    "serve": "bun run ./dist"
   },
   "dependencies": {
     "hono": "^4.8.4"
